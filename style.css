@@ -400,10 +400,7 @@ header nav ul li:hover a {
     height: 100%;
     box-shadow: 0px 0px 10px 0px #E0E0E0;
     border-radius: 25px;
-    text-align: center;
-    
-    
-    
+    text-align: center;  
 }
 .activite-list .column a{
     height: 100%;
