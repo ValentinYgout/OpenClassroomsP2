@@ -1,17 +1,20 @@
-
-
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    padding: 0px 40px;
     font-size: 16px;
 }
+
 h1 {
     font-size: 160%;
 }
+
 h2 {
     font-size: 150%;
-    ;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 150%;
     font-weight: bold;
 }
 
@@ -19,19 +22,26 @@ h2 {
     font-weight: bold;
 }
 
+main {
+    padding: 0px 50px;
+}
 
 
-.menu-link{
+
+.menu-link {
     display: flex;
-    justify-content:flex-end ;
+    justify-content: flex-end;
 }
 
 /************************************
 *            header + nav           *
 ************************************/
-header{display: flex;
-justify-content: space-between;
-padding: 2px;}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
 header #logo img {
     width: 150px;
 }
@@ -44,35 +54,56 @@ header nav ul {
     list-style-type: none;
     margin: 0;
 }
+
 header nav ul li {
     padding: 50px 25px;
-    border-top: 4px solid #F2F2F2 ;
+    border-top: 4px solid white;
     margin: 0px 20px 0px 20px;
 }
+
+header nav ul li:first-child {
+    padding: 50px 25px;
+    border-top: 4px solid #0065FC;
+    margin: 0px 20px 0px 20px;
+
+}
+
+header nav ul li:first-child a {
+    color: #0065FC;
+    font-weight: bold
+}
+
 header nav ul li:hover {
     border-color: #0065FC;
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 header nav ul li a {
     color: black;
     text-decoration: none;
+    font-weight: bold;
 }
+
 header nav ul li:hover a {
-    color:  #0065FC;
+    color: #0065FC;
 }
+
 /************************************
 *        Title + Searchbar       *
 ************************************/
-.under-title{
+.under-title {
     display: block;
+    margin-top: -15px;
     margin-bottom: 20px;
 }
+
 .searchbar {
-   display: flex;
-    width: auto;
-    
-   
+    display: flex;
+    width: 20%;
+
+
 }
+
 .searchbar .fa-map-marker-alt {
     display: inline-block;
     padding: 14px;
@@ -81,13 +112,16 @@ header nav ul li:hover a {
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
 }
+
 .searchbar input {
     outline: none;
     height: 52px;
     margin-left: -5px;
-    border: 1px solid #F2F2F2 ;
+    border: 1px solid #F2F2F2;
     padding: 10px;
+    font-weight: bold;
 }
+
 .searchbar button {
     background-color: #0065FC;
     color: white;
@@ -97,78 +131,73 @@ header nav ul li:hover a {
     padding: 15px;
     cursor: pointer;
 }
+
+.searchbar button p:first-letter {
+    text-transform: uppercase;
+}
+
+.fa-search {
+    display: none;
+}
+
 /************************************
 *              Filters             *
 ************************************/
 
-#filter{
+#filter {
     display: flex;
     align-items: center;
 }
 
 
- #filters{
+#filters {
     display: flex;
     align-items: center;
-    
-    
     gap: 20px;
     border-radius: 30px;
-   
     list-style-type: none;
     font-weight: bold;
-    
     cursor: pointer;
-    
 }
 
-#filters li{
-   
+#filters li {
     display: flex;
     height: 44px;
-
+    padding-right: 15px;
     border: 3px solid #F2F2F2;
     border-radius: 30px;
     align-items: center;
-   
-    
 }
+
 #filters .picto {
     position: relative;
     right: 2px;
-    
-    
-    
     background-color: #DEEBFF;
     height: 50px;
     width: 50px;
     display: inline-block;
-   
     border-radius: 100%;
     color: #0065FC;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-   
 }
-#filters span {
-    
-    
-  padding-left: 5px;
-    
-   
-}
-#filters :hover > .picto {
-    background-color: #0065FC;
-    color:#DEEBFF;
 
+#filters span {
+    padding-left: 10px;
+}
+
+#filters :hover>.picto {
+    background-color: #0065FC;
+    color: #DEEBFF;
 }
 
 
 .info {
     display: flex;
+    margin: 20px 0;
 }
+
 /************************************
 *              Info line           *
 ************************************/
@@ -179,39 +208,39 @@ header nav ul li:hover a {
     width: 25px;
     height: 25px;
     font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
 }
+
 /************************************
 *              Hebergement           *
 ************************************/
 #hebergement .marseille {
     width: 66%;
 }
-#hebergement .marseille .title{
+
+#hebergement .marseille .title {
     padding-left: 40px;
-   
+
 }
 
 
 
 
-#hebergement{
+#hebergement {
     display: flex;
     justify-content: space-between;
     height: 520px;
-   
-}
-#hebergement .marseille{
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    box-sizing: content-box;
 
 }
-.hebergements{
-    
+
+#hebergement .marseille {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+
+
+}
+
+.hebergements {
+
     width: 100%;
     height: 160px;
 }
@@ -222,59 +251,55 @@ header nav ul li:hover a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-bottom: 50px;
-    
+
+
 }
 
 .hebergement-list a {
     width: 28%;
-   
-   height: 160px;
-   margin-bottom: 30px;
-  
-   
-    
+
+    height: 160px;
+    margin-bottom: 30px;
 }
+
 .hebergement-list a article {
     background-color: white;
     padding: 4px;
-    
     border-radius: 25px;
- 
-    
+    border: 3px solid #F2F2F2
 }
-.hebergement-list a article:hover {
-  box-shadow:  0px 0px 20px 0px blue;
 
+.hebergement-list a article:hover {
+    box-shadow: 0px 0px 20px 0px #f2f2f2;
 }
+
 .hebergement-list a article img {
     height: calc(100% - 60px);
     width: 100%;
-    border-radius:  20px 20px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-  
-
-    
+    border: 2px solid #F2F2F2
 }
+
 .hebergement-list a {
     color: black;
     text-decoration: none;
-    
 }
- 
+
 .hebergement-list a article .fa-star.blue {
     color: #0065FC;
-    
 }
 
 .hebergement-list a article .fa-star.grey {
-    color: grey;
-    
+    color: #dad5d5;
 }
- .article-content h3, p , .star-rate {
-   
-   font-size: 14px;
-   margin:0;
+
+.article-content h3,
+p,
+.star-rate {
+    font-size: 12px;
+    margin: 0;
+    padding-left: 10px;
 }
 
 
@@ -284,90 +309,81 @@ header nav ul li:hover a {
 
 #hebergement .populaire {
     width: 30%;
-    
-    
-   
 }
-#hebergement .populaire .title{
 
+#hebergement .populaire .title {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
-
 }
 
 #hebergement .populaire .hebergement-list {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-   
-   
-  
     justify-content: space-around;
     height: 400px;
     padding: 0px 10px 20px 20px;
 }
+
 .populaire {
     background-color: #F2F2F2;
-   
     border-radius: 20px;
 }
+
 #hebergement .populaire .hebergement-list a {
     width: 100%
 }
+
 #hebergement .populaire .hebergement-list a article {
     display: flex;
     flex-direction: row;
     width: 90%;
     height: 100px;
    
-   
 }
+
 #hebergement .populaire .hebergement-list a article img {
     border-radius: 20px 0px 0px 20px;
     width: 45%;
     height: 100%;
     object-fit: cover;
-    
-    
 }
+
 #hebergement .populaire .hebergement-list a article .article-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 20px;
-    
 }
 
-.afficher-plus  {
-   text-decoration: none;
-   color: black;
-  
-  
+.afficher-plus {
+    text-decoration: none;
+    color: black;
 }
+
 .afficher-plus p {
     font-weight: bold;
-    
+
     color: black;
     font-size: 18px;
-    padding-left: 30px;
-    
-   
-   
- }
+    padding: 20px 0px 0px 25px;
+}
 
-.afficher-plus:hover{
+.afficher-plus:hover {
     text-decoration-line: underline;
 }
+
 /************************************
 *            Activités              *
 ************************************/
 #activite {
     margin-bottom: 100px;
-    
+
 }
-.activite-list .column a{
+
+.activite-list .column a {
     color: black;
     text-decoration: none;
 }
@@ -376,21 +392,23 @@ header nav ul li:hover a {
     display: flex;
     justify-content: space-between;
     height: 600px;
-   
-   
+
+
 }
+
 .activite-list .column {
     width: 23%;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 25px;
-    
+
 }
+
 .activite-list .column article img {
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 60px);
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
@@ -398,26 +416,31 @@ header nav ul li:hover a {
 
 .activite-list .column article {
     height: 100%;
-    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    box-shadow: 4px 4px 8px #c5c4c4;
     border-radius: 25px;
-    text-align: center;  
+    text-align: center;
+    padding-bottom: 10px;
 }
-.activite-list .column a{
+
+.activite-list .column a {
     height: 100%;
     margin-bottom: 20px;
+    
 }
+
 .activite-list .column a article:hover {
-    box-shadow:  0px 0px 10px 0px blue;
-  
-  }
-.activite-list .column article h3 {
-    padding: 0px;
-    margin: 0px;
-    font-size: 16px;
+    box-shadow: 4px 4px 8px #21207e;
 }
+
+.activite-list .column article h3 {
+   
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
 .activite-list .column.double article {
     max-height: 290px;
-   
 }
 
 
@@ -425,35 +448,200 @@ header nav ul li:hover a {
 /************************************
 *              Footer               *
 ************************************/
-footer{
-    margin-top: 20px;
+footer {
+
     display: flex;
     background-color: #F2F2F2;
-   
-   
 }
+
 footer .footer-column {
     width: 30%;
-    padding-left: 30px;
+    height: 190px;
+    padding: 0px 50px;
 }
+
 footer .footer-column ul {
     list-style-type: none;
-    padding-inline-start:0;
+    padding-inline-start: 0;
 }
+
 footer .footer-column ul li a {
     color: black;
     text-decoration: none;
     padding: 3px;
-    text-align:left;
+    text-align: left;
 }
-footer .footer-column ul li:hover  {
+
+footer .footer-column ul li:hover {
     color: blue;
-    
-    text-decoration: underline ;
+    text-decoration: underline;
 }
-footer h4
-{
-   
+
+footer h4 {
+
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+
+@media (max-width:992px) {
+    #hebergement {
+        flex-direction: column;
+
+        margin-bottom: 50px;
+        height: auto;
+        margin: 0 20;
+    }
+    #hebergement .populaire {
+        order: 1;
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 0;
+    }
+    #hebergement .marseille {
+        order: 2;
+        width: 100%;;
+        margin-bottom: 25px;
+        background-color: white;
+       
+    }
+    
+}
+
+@media (max-width:768px) {
+    body {
+        padding: 0;
+    }
+
+    main {
+        padding: 0px;
+    }
+
+    header {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header #logo {
+        margin: auto;
+        padding: 0 0;
+
+    }
+
+    header nav ul {
+        width: 100%;
+
+        padding: 0;
+    }
+
+    header nav ul li {
+        width: 50%;
+
+        text-align: center;
+        margin: 0px;
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+
+    }
+
+    header nav ul li:first-child {
+        border-top: none;
+        margin: 0;
+    }
+
+    .searchbar button {
+        border-radius: 15px;
+    }
+
+    .fa-search {
+        display: block;
+    }
+
+    .searchbar button p {
+        display: none;
+    }
+
+    #filter {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #filters {
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #hebergement {
+        flex-direction: column;
+
+        margin-bottom: 50px;
+        height: auto;
+        margin: 0 20;
+    }
+
+    #hebergement .marseille {
+        order: 2;
+        width: 100%;;
+        margin-bottom: 25px;
+        background-color: white;
+       
+    }
+
+    #hebergement .populaire {
+        order: 1;
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 0;
+    }
+
+    #hebergement .marseille .hebergement-list {
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+
+    #hebergement .marseille .hebergement-list a {
+        width: 90%;
+      
+    }
+
+    #activite {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+
+    #activite .activite-list .column {
+        width: 90%;
+        
+    }
+
+
+    #activite .activite-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer .footer-column {
+        width: 100%;
+        height: 100%;
+        padding: 0px 0px 20px 0px;
+
+
+
+
+    }
+
+
+
+
 }
