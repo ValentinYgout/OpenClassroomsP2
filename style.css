@@ -497,7 +497,7 @@ footer h4 {
         flex-direction: column;
         margin-bottom: 50px;
         height: auto;
-        margin: 0 20;
+        margin: 0 20px;
     }
 
     #hebergement .populaire {
@@ -630,7 +630,7 @@ footer h4 {
     #hebergement {
         flex-direction: column;
         margin-bottom: 20px;
-        margin: 0 20;
+        margin: 0 20px;
     }
 
     #hebergement .marseille {
