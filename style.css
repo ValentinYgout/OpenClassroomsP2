@@ -45,7 +45,7 @@ header {
 }
 
 header #logo img {
-    width: 100px;
+    width: 130px;
     margin-top: 40px;
 }
 
@@ -96,7 +96,7 @@ header nav ul li:hover a {
 
 .searchbar {
     display: flex;
-    width: 20%;
+    
 }
 
 .searchbar .fa-map-marker-alt {
@@ -115,6 +115,7 @@ header nav ul li:hover a {
     border: 1px solid #F2F2F2;
     padding: 10px;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .searchbar button {
@@ -131,6 +132,7 @@ header nav ul li:hover a {
 
 .searchbar button span {
     font-weight: 700;
+    font-size: 16px;
 }
 
 .fa-search {
@@ -159,10 +161,10 @@ header nav ul li:hover a {
     display: flex;
     height: 44px;
     padding-right: 15px;
-    border: 3px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 30px;
     align-items: center;
-    margin: 5px;
+    margin: 0 10px;
 }
 
 #filters .picto {
@@ -223,7 +225,7 @@ header nav ul li:hover a {
 }
 
 #hebergement .marseille .title {
-    padding: 0px 0px 0px 25px
+    
 }
 
 #hebergement {
@@ -235,6 +237,7 @@ header nav ul li:hover a {
 #hebergement .marseille {
     background-color: #F2F2F2;
     border-radius: 20px;
+    padding: 0 30px;
 }
 
 .hebergements {
@@ -244,13 +247,14 @@ header nav ul li:hover a {
 .hebergement-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 450px;
+    justify-content: space-between;
+   
+    
 }
 
 .hebergement-list a {
     width: 30%;
-    height: 160px;
+    height: px;
     margin-bottom: 30px;
 }
 
@@ -261,7 +265,7 @@ header nav ul li:hover a {
 }
 
 article {
-    box-shadow: 4px 4px 8px grey;
+    box-shadow: 4px 4px 8px #f1eded;
 }
 
 .hebergement-list a article:hover {
@@ -292,7 +296,7 @@ article {
 p,
 .star-rate {
     font-size: 12px;
-    padding-left: 10px;
+    padding-left: 3px;
 }
 
 /************************************
@@ -301,11 +305,12 @@ p,
 #hebergement .populaire {
     width: 30%;
     height: 600px;
+    padding: 0 40px;
 }
 
 #hebergement .populaire .title {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
     margin-right: 12px;
@@ -319,9 +324,9 @@ p,
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 530px;
-    padding: 0px 15px 20px 15px;
+    
 }
 
 .populaire {
@@ -356,18 +361,13 @@ p,
 
 .afficher-plus {
     text-decoration: none;
-    color: black;
-}
-
-.afficher-plus span {
     font-weight: bold;
     color: black;
     font-size: 18px;
-    padding: 20px 0px 0px 25px;
-    margin-bottom: 20px;
-    position: relative;
-    top: 30px;
+    
 }
+
+
 
 .afficher-plus:hover {
     text-decoration-line: underline;
@@ -378,6 +378,7 @@ p,
 ************************************/
 #activite {
     margin-bottom: 100px;
+
 }
 
 .activite-list .column a {
@@ -409,17 +410,18 @@ p,
 .activite-list .column article {
     height: 450px;
     border-radius: 25px;
-    padding-bottom: 10px;
+  
 }
+
 
 .activite-list .column article h3 {
-    padding-left: 20px;
+    padding: 10px;
+    margin:0;
+    text-align: center;
 }
 
-.activite-list .column a {
-    height: 100%;
-    margin-bottom: 20px;
-}
+#double-top{max-height: 270px}
+#double-bottom{max-height:150px}
 
 .activite-list .column a article:hover {
     box-shadow: 0px 0px 20px 0px grey;
@@ -429,6 +431,7 @@ p,
     font-size: 18px;
     font-weight: bold;
 }
+
 
 .activite-list .column.double article {
     max-height: 210px;
@@ -467,50 +470,55 @@ footer .footer-column ul li:hover {
 }
 
 footer h4 {
-    font-weight: bold;
+    font-weight: 800;
     font-size: 20px;
 }
-
+/************************************
+*              Tablet               *
+************************************/
 @media (max-width:992px) {
     body {
         font-size: 16px;
+        padding:0px;
+    }
+    main{
+        padding:0px;
+    
     }
 
-    main {
-        padding: 0px;
-    }
+   
+    header,h1,span,form,#info{padding: 0 20px;}
 
-    main>h1,
-    main>span,
-    main>form,
-    #info,
-    .hebergement-list,
-    .title {
-        padding: 0px 20px;
-    }
+   
 
     #filters li {
         white-space: nowrap;
+        margin-bottom: 10px;
     }
 
     #hebergement {
         flex-direction: column;
         margin-bottom: 50px;
         height: auto;
-        margin: 0 20px;
+        margin: 0;
+        gap:0;
     }
 
     #hebergement .populaire {
         order: 1;
-        width: 100%;
+        width: auto;
         margin-bottom: 15px;
         border-radius: 0;
+        padding: 0 20px;
+    }
+    #hebergement .populaire .hebergement-list a article{
+        width: auto;
     }
 
     #hebergement .marseille {
         order: 2;
-        width: 100%;
-        ;
+        width: auto;
+        padding: 0 20px;
         margin-bottom: 25px;
         background-color: white;
     }
@@ -520,15 +528,17 @@ footer h4 {
         margin: 10px 0px;
     }
 
-    #hebergement .populaire,
+    
     .hebergement-list {
-        padding: 0px 0px 0px 15px;
+        padding: 0;
         flex-wrap: wrap;
+        
     }
 
     #hebergement .populaire .hebergement-list a {
         width: 100%;
     }
+  
 
     .activite-list {
         flex-wrap: wrap;
@@ -536,6 +546,10 @@ footer h4 {
 
     .activite-list .column {
         width: 48%;
+        margin-bottom: 20px;
+    }
+    #activite{
+        padding: 0 20px;
     }
 
     #activite>div>div:nth-child(3) {
@@ -552,7 +566,9 @@ footer h4 {
         padding: 0px 50px;
     }
 }
-
+/************************************
+*              Phone               *
+************************************/
 @media (max-width:767px) {
     body {
         padding: 0px;
@@ -572,10 +588,18 @@ footer h4 {
         margin: auto;
         padding: 0 0;
     }
+    nav{
+        margin-top: 40px;
+    }
+   
+    .searchbar input{
+        width: 70%;
+    }
 
     header nav ul {
         width: 100%;
         padding: 0;
+        
     }
 
     header nav ul li {
@@ -584,11 +608,16 @@ footer h4 {
         margin: 0px;
         border-top: none;
         border-bottom: 2px solid #F2F2F2;
+        height: 50px;
+        padding: 0;
+        
+
     }
 
     header nav ul li:first-child {
         border-top: none;
         margin: 0;
+        padding: 0;
         border-bottom: 2px solid #0065FC;
     }
 
@@ -599,7 +628,7 @@ footer h4 {
     }
 
     .article-content {
-        padding-bottom: 2px;
+        padding-left: 15px;
     }
 
     .searchbar button {
@@ -626,17 +655,19 @@ footer h4 {
         align-items: flex-start;
         flex-wrap: wrap;
     }
+   
 
     #hebergement {
         flex-direction: column;
+        margin: 0px;
         margin-bottom: 20px;
-        margin: 0 20px;
+       
     }
 
     #hebergement .marseille {
         order: 2;
-        width: 100%;
-        ;
+        width: auto;
+        padding: 0 20px;
         margin-bottom: 25px;
         background-color: white;
     }
@@ -647,14 +678,14 @@ footer h4 {
 
     #hebergement .marseille .hebergement-list {
         width: auto;
+        
     }
 
     #hebergement .populaire {
         order: 1;
-        width: 100%;
         margin-bottom: 15px;
         border-radius: 0;
-        padding: 0;
+        padding: 0 20px;
         height: 600px;
     }
 
@@ -674,7 +705,7 @@ footer h4 {
     #hebergement .marseille .hebergement-list {
         flex-direction: column;
         flex-wrap: wrap;
-        height: 1300px;
+        height: auto;
     }
 
     #hebergement .marseille .hebergement-list a {
@@ -682,35 +713,44 @@ footer h4 {
     }
 
     #hebergement .marseille .title {
-        padding: 0px 0px 0px 20px
+        padding: 0;
     }
 
     #activite {
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
+        padding: 0 20px;
     }
 
     .activite-list .column article {
         height: 180px;
+        margin-bottom: 20px;
+      
     }
 
     #activite .activite-list .column {
-        width: 90%;
+        width: 100%;
+       
     }
 
     #activite .activite-list {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         height: auto;
+        
     }
 
     footer {
         flex-direction: column;
+        padding-top: 20px;
     }
 
     footer .footer-column {
         width: auto;
         height: 100%;
         padding: 0px 0px 20px 30px;
+    }
+    footer li a{
+        font-size: 18px;
     }
 }
