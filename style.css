@@ -96,7 +96,7 @@ header nav ul li:hover a {
 
 .searchbar {
     display: flex;
-    
+
 }
 
 .searchbar .fa-map-marker-alt {
@@ -224,9 +224,7 @@ header nav ul li:hover a {
     width: 66%;
 }
 
-#hebergement .marseille .title {
-    
-}
+#hebergement .marseille .title {}
 
 #hebergement {
     display: flex;
@@ -248,13 +246,12 @@ header nav ul li:hover a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   
-    
+
+
 }
 
 .hebergement-list a {
     width: 30%;
-    height: px;
     margin-bottom: 30px;
 }
 
@@ -326,7 +323,7 @@ p,
     flex-wrap: nowrap;
     justify-content: space-between;
     height: 530px;
-    
+
 }
 
 .populaire {
@@ -364,7 +361,7 @@ p,
     font-weight: bold;
     color: black;
     font-size: 18px;
-    
+
 }
 
 
@@ -410,18 +407,23 @@ p,
 .activite-list .column article {
     height: 450px;
     border-radius: 25px;
-  
+
 }
 
 
 .activite-list .column article h3 {
     padding: 10px;
-    margin:0;
+    margin: 0;
     text-align: center;
 }
 
-#double-top{max-height: 270px}
-#double-bottom{max-height:150px}
+#double-top {
+    max-height: 270px
+}
+
+#double-bottom {
+    max-height: 150px
+}
 
 .activite-list .column a article:hover {
     box-shadow: 0px 0px 20px 0px grey;
@@ -473,23 +475,31 @@ footer h4 {
     font-weight: 800;
     font-size: 20px;
 }
+
 /************************************
 *              Tablet               *
 ************************************/
 @media (max-width:992px) {
     body {
         font-size: 16px;
-        padding:0px;
-    }
-    main{
-        padding:0px;
-    
+        padding: 0px;
     }
 
-   
-    header,h1,span,form,#info{padding: 0 20px;}
+    main {
+        padding: 0px;
 
-   
+    }
+
+
+    header,
+    h1,
+    span,
+    form,
+    #info {
+        padding: 0 20px;
+    }
+
+
 
     #filters li {
         white-space: nowrap;
@@ -501,7 +511,7 @@ footer h4 {
         margin-bottom: 50px;
         height: auto;
         margin: 0;
-        gap:0;
+        gap: 0;
     }
 
     #hebergement .populaire {
@@ -511,7 +521,8 @@ footer h4 {
         border-radius: 0;
         padding: 0 20px;
     }
-    #hebergement .populaire .hebergement-list a article{
+
+    #hebergement .populaire .hebergement-list a article {
         width: auto;
     }
 
@@ -528,17 +539,17 @@ footer h4 {
         margin: 10px 0px;
     }
 
-    
+
     .hebergement-list {
         padding: 0;
         flex-wrap: wrap;
-        
+
     }
 
     #hebergement .populaire .hebergement-list a {
         width: 100%;
     }
-  
+
 
     .activite-list {
         flex-wrap: wrap;
@@ -548,7 +559,8 @@ footer h4 {
         width: 48%;
         margin-bottom: 20px;
     }
-    #activite{
+
+    #activite {
         padding: 0 20px;
     }
 
@@ -566,6 +578,7 @@ footer h4 {
         padding: 0px 50px;
     }
 }
+
 /************************************
 *              Phone               *
 ************************************/
@@ -588,18 +601,19 @@ footer h4 {
         margin: auto;
         padding: 0 0;
     }
-    nav{
+
+    nav {
         margin-top: 40px;
     }
-   
-    .searchbar input{
+
+    .searchbar input {
         width: 70%;
     }
 
     header nav ul {
         width: 100%;
         padding: 0;
-        
+
     }
 
     header nav ul li {
@@ -610,7 +624,7 @@ footer h4 {
         border-bottom: 2px solid #F2F2F2;
         height: 50px;
         padding: 0;
-        
+
 
     }
 
@@ -655,13 +669,13 @@ footer h4 {
         align-items: flex-start;
         flex-wrap: wrap;
     }
-   
+
 
     #hebergement {
         flex-direction: column;
         margin: 0px;
         margin-bottom: 20px;
-       
+
     }
 
     #hebergement .marseille {
@@ -678,7 +692,7 @@ footer h4 {
 
     #hebergement .marseille .hebergement-list {
         width: auto;
-        
+
     }
 
     #hebergement .populaire {
@@ -725,19 +739,19 @@ footer h4 {
     .activite-list .column article {
         height: 180px;
         margin-bottom: 20px;
-      
+
     }
 
     #activite .activite-list .column {
         width: 100%;
-       
+
     }
 
     #activite .activite-list {
         flex-wrap: wrap;
         justify-content: flex-start;
         height: auto;
-        
+
     }
 
     footer {
@@ -750,7 +764,8 @@ footer h4 {
         height: 100%;
         padding: 0px 0px 20px 30px;
     }
-    footer li a{
+
+    footer li a {
         font-size: 18px;
     }
 }
