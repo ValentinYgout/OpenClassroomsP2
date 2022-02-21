@@ -3,38 +3,29 @@ body {
     margin: 0;
     font-size: 15px;
 }
-
 h1 {
     font-size: 150%;
     font-weight: 800;
 }
-
 h2 {
-    font-size: 130%;
     font-weight: 800;
 }
-
 h3 {
     font-weight: 800;
 }
-
 .price {
     font-weight: 700;
 }
-
 main {
     padding: 0px 50px;
 }
-
 ul {
     padding-inline-start: 0px
 }
-
 .menu-link {
     display: flex;
     justify-content: flex-end;
 }
-
 /************************************
 *            header + nav           *
 ************************************/
@@ -43,48 +34,39 @@ header {
     justify-content: space-between;
     padding: 0px 50px;
 }
-
 header #logo img {
     width: 130px;
     margin-top: 40px;
 }
-
 header nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
 }
-
 header nav ul li {
     padding: 50px 25px;
     border-top: 2px solid white;
     margin: 0px 20px 0px 20px;
 }
-
 header nav ul li:first-child {
     padding: 50px 25px;
     border-top: 2px solid #0065FC;
     margin: 0px 20px 0px 20px;
 }
-
 header nav ul li:first-child a {
     color: #0065FC;
 }
-
 header nav ul li:hover {
     border-color: #0065FC;
 }
-
 header nav ul li a {
     color: black;
     text-decoration: none;
     font-weight: 500;
 }
-
 header nav ul li:hover a {
     color: #0065FC;
 }
-
 /************************************
 *        Title + Searchbar       *
 ************************************/
@@ -93,12 +75,9 @@ header nav ul li:hover a {
     margin-top: 15px;
     margin-bottom: 20px;
 }
-
 .searchbar {
     display: flex;
-
 }
-
 .searchbar .fa-map-marker-alt {
     display: inline-block;
     padding: 16px;
@@ -107,38 +86,31 @@ header nav ul li:hover a {
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
 }
-
 .searchbar input {
     outline: none;
     height: 52px;
     margin-left: -5px;
     border: 1px solid #F2F2F2;
     padding: 10px;
-    font-weight: bold;
-    font-size: 16px;
 }
-
 .searchbar button {
     background-color: #0065FC;
     color: white;
     height: 49px;
     border: none;
     border-radius: 0px 15px 15px 0px;
-    padding: 18px;
+    padding: 12px;
     cursor: pointer;
     right: 10px;
     position: relative;
 }
-
-.searchbar button span {
+.form-text {
     font-weight: 700;
     font-size: 16px;
 }
-
 .fa-search {
     display: none;
 }
-
 /************************************
 *              Filters             *
 ************************************/
@@ -146,7 +118,6 @@ header nav ul li:hover a {
     display: flex;
     align-items: center;
 }
-
 #filters {
     display: flex;
     align-items: center;
@@ -155,8 +126,8 @@ header nav ul li:hover a {
     list-style-type: none;
     font-weight: bold;
     cursor: pointer;
+    padding-left: 20px;
 }
-
 #filters li {
     display: flex;
     height: 44px;
@@ -166,7 +137,6 @@ header nav ul li:hover a {
     align-items: center;
     margin: 0 10px;
 }
-
 #filters .picto {
     position: relative;
     right: 2px;
@@ -180,21 +150,17 @@ header nav ul li:hover a {
     align-items: center;
     justify-content: center;
 }
-
 #filters span {
     padding-left: 10px;
 }
-
 #filters :hover>.picto {
     background-color: #0065FC;
     color: #F2F2F2;
 }
-
 #info {
     display: flex;
     margin-bottom: 30px;
 }
-
 /************************************
 *              Info line           *
 ************************************/
@@ -210,184 +176,150 @@ header nav ul li:hover a {
     align-items: center;
     margin-right: 15px;
 }
-
 #info span {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 /************************************
 *              Hebergement           *
 ************************************/
 #hebergement .marseille {
     width: 66%;
 }
-
-#hebergement .marseille .title {}
-
 #hebergement {
     display: flex;
     gap: 30px;
     justify-content: space-between;
 }
-
 #hebergement .marseille {
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 0 30px;
+    padding: 25px 30px;
 }
-
 .hebergements {
     height: 200px;
 }
-
 .hebergement-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
 }
-
 .hebergement-list a {
     width: 30%;
     margin-bottom: 30px;
 }
-
 .hebergement-list a article {
     background-color: white;
     padding: 4px;
     border-radius: 25px;
 }
-
 article {
-    box-shadow: 4px 4px 8px #f1eded;
+    box-shadow: 0px 0px 8px #d6d2d2;
 }
-
 .hebergement-list a article:hover {
-    box-shadow: 0px 0px 20px 0px #F2F2F2;
+    box-shadow: 0px 0px 20px 0px #dad5d5;
 }
-
 .hebergement-list a article img {
     height: calc(100% - 84px);
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
-
 .hebergement-list a {
     color: black;
     text-decoration: none;
 }
-
 .hebergement-list a article .fa-star.blue {
     color: #0065FC;
 }
-
 .hebergement-list a article .fa-star.grey {
     color: lightgrey;
 }
-
 .article-content h3,
-p,
-.star-rate {
-    font-size: 12px;
-    padding-left: 3px;
+.article-content p,
+.article-content .star-rate {
+    font-size: 14px;
+    margin: 7px;
 }
-
 /************************************
 *            Populaire              *
 ************************************/
 #hebergement .populaire {
     width: 30%;
-    height: 600px;
-    padding: 0 40px;
+    height: 555px;
+    padding: 25px 40px;
 }
-
-#hebergement .populaire .title {
+#hebergement .populaire .title-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    margin-right: 12px;
 }
-
-#hebergement .populaire .title .fas {
+.title,
+.fa-chart-line {
+    font-size: 20px;
+}
+#hebergement .populaire .title-container .fas {
     color: black;
 }
-
 #hebergement .populaire .hebergement-list {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
     height: 530px;
-
 }
-
 .populaire {
     background-color: #F2F2F2;
     border-radius: 20px;
 }
-
 #hebergement .populaire .hebergement-list a {
     width: 100%
 }
-
 #hebergement .populaire .hebergement-list a article {
     display: flex;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     height: 140px;
 }
-
 #hebergement .populaire .hebergement-list a article img {
     border-radius: 20px 0px 0px 20px;
     width: 45%;
     height: 100%;
     object-fit: cover;
 }
-
 #hebergement .populaire .hebergement-list a article .article-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 4%;
 }
-
 .afficher-plus {
     text-decoration: none;
     font-weight: bold;
     color: black;
-    font-size: 18px;
-
+    font-size: 16px;
 }
-
-
-
 .afficher-plus:hover {
     text-decoration-line: underline;
 }
-
 /************************************
 *            Activités              *
 ************************************/
 #activite {
     margin-bottom: 100px;
-
 }
-
+#activite .title {
+    margin-top: 60px;
+}
 .activite-list .column a {
     color: black;
     text-decoration: none;
 }
-
 .activite-list {
     display: flex;
     justify-content: space-between;
 }
-
 .activite-list .column {
     width: 23%;
     display: flex;
@@ -396,49 +328,36 @@ p,
     border-radius: 25px;
     max-height: 470px;
 }
-
 .activite-list .column article img {
     width: 100%;
     height: calc(100% - 60px);
     object-fit: cover;
     border-radius: 25px 25px 0px 0px;
 }
-
 .activite-list .column article {
     height: 450px;
     border-radius: 25px;
-
 }
-
-
 .activite-list .column article h3 {
-    padding: 10px;
+    padding: 10px 10px;
     margin: 0;
-    text-align: center;
 }
-
 #double-top {
     max-height: 270px
 }
-
 #double-bottom {
     max-height: 150px
 }
-
 .activite-list .column a article:hover {
     box-shadow: 0px 0px 20px 0px grey;
 }
-
 .activite-list .column article h3 {
     font-size: 18px;
     font-weight: bold;
 }
-
-
 .activite-list .column.double article {
     max-height: 210px;
 }
-
 /************************************
 *              Footer               *
 ************************************/
@@ -446,36 +365,32 @@ footer {
     display: flex;
     background-color: #F2F2F2;
 }
-
 footer .footer-column {
     width: 30%;
     height: 190px;
+    margin-top: 20px;
     padding: 0px 50px;
 }
-
 footer .footer-column ul {
     list-style-type: none;
     padding-inline-start: 0;
     line-height: 25px;
 }
-
 footer .footer-column ul li a {
     color: black;
     text-decoration: none;
-    padding: 3px;
+    padding-bottom: 10px;
     text-align: left;
 }
-
 footer .footer-column ul li:hover {
     color: #0065FC;
     text-decoration: underline;
 }
-
 footer h4 {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 0px;
 }
-
 /************************************
 *              Tablet               *
 ************************************/
@@ -484,13 +399,9 @@ footer h4 {
         font-size: 16px;
         padding: 0px;
     }
-
     main {
         padding: 0px;
-
     }
-
-
     header,
     h1,
     span,
@@ -498,14 +409,16 @@ footer h4 {
     #info {
         padding: 0 20px;
     }
-
-
-
+    .article-content h3,
+    .article-content p,
+    .article-content .star-rate {
+        font-size: 15px;
+        margin: 10px;
+    }
     #filters li {
         white-space: nowrap;
         margin-bottom: 10px;
     }
-
     #hebergement {
         flex-direction: column;
         margin-bottom: 50px;
@@ -513,7 +426,6 @@ footer h4 {
         margin: 0;
         gap: 0;
     }
-
     #hebergement .populaire {
         order: 1;
         width: auto;
@@ -521,11 +433,9 @@ footer h4 {
         border-radius: 0;
         padding: 0 20px;
     }
-
     #hebergement .populaire .hebergement-list a article {
         width: auto;
     }
-
     #hebergement .marseille {
         order: 2;
         width: auto;
@@ -533,52 +443,42 @@ footer h4 {
         margin-bottom: 25px;
         background-color: white;
     }
-
     #hebergement .populaire .title {
         justify-content: space-between;
         margin: 10px 0px;
     }
-
-
     .hebergement-list {
         padding: 0;
         flex-wrap: wrap;
-
     }
-
+    .hebergement-list a article {
+        padding: 10px
+    }
     #hebergement .populaire .hebergement-list a {
         width: 100%;
     }
-
-
     .activite-list {
         flex-wrap: wrap;
     }
-
     .activite-list .column {
         width: 48%;
         margin-bottom: 20px;
     }
-
     #activite {
         padding: 0 20px;
     }
-
     #activite>div>div:nth-child(3) {
         order: 1;
     }
-
     #activite>div>div:nth-child(4) {
         order: 0;
     }
-
     footer .footer-column {
         width: 30%;
         height: auto;
-        padding: 0px 50px;
+        padding: 0px 5px;
     }
 }
-
 /************************************
 *              Phone               *
 ************************************/
@@ -586,36 +486,45 @@ footer h4 {
     body {
         padding: 0px;
     }
-
     h1 {
         font-size: 130%;
+        margin-top: 40px;
     }
-
     header {
         width: auto;
         flex-direction: column;
         padding: 0;
     }
-
     header #logo {
         margin: auto;
         padding: 0 0;
     }
-
     nav {
         margin-top: 40px;
     }
-
+    #filters {
+        padding-left: 0;
+    }
+    .searchbar {
+        margin: 30px 0
+    }
+    #info .fas.fa-info {
+        height: 18px;
+        width: 24px;
+    }
+    #info .span {
+        padding: 0 !important;
+    }
     .searchbar input {
         width: 70%;
     }
-
+    .searchbar button {
+        padding: 18px;
+    }
     header nav ul {
         width: 100%;
         padding: 0;
-
     }
-
     header nav ul li {
         width: 50%;
         text-align: center;
@@ -624,60 +533,52 @@ footer h4 {
         border-bottom: 2px solid #F2F2F2;
         height: 50px;
         padding: 0;
-
-
     }
-
     header nav ul li:first-child {
         border-top: none;
         margin: 0;
         padding: 0;
         border-bottom: 2px solid #0065FC;
     }
-
+    .price {
+        padding: 0px
+    }
     .article-content h3,
     p {
         font-size: 16px;
         margin-bottom: 10px;
     }
-
     .article-content {
         padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-
     .searchbar button {
         border-radius: 15px;
         height: 52px;
     }
-
     .fa-search {
         display: block;
     }
-
     .searchbar button span {
         display: none;
     }
-
     #filter {
         flex-direction: column;
         align-items: flex-start;
         flex-wrap: wrap;
     }
-
     #filters {
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
     }
-
-
     #hebergement {
         flex-direction: column;
         margin: 0px;
         margin-bottom: 20px;
-
     }
-
     #hebergement .marseille {
         order: 2;
         width: auto;
@@ -685,16 +586,12 @@ footer h4 {
         margin-bottom: 25px;
         background-color: white;
     }
-
     .marseille article {
-        line-height: 7px;
+        line-height: 5px;
     }
-
     #hebergement .marseille .hebergement-list {
         width: auto;
-
     }
-
     #hebergement .populaire {
         order: 1;
         margin-bottom: 15px;
@@ -702,70 +599,60 @@ footer h4 {
         padding: 0 20px;
         height: 600px;
     }
-
     #hebergement .populaire .hebergement-list {
         height: 530px;
     }
-
     #hebergement .populaire .hebergement-list a article {
         height: 140px;
         width: 97%;
     }
-
     .marseille .hebergements {
         height: 190px;
     }
-
     #hebergement .marseille .hebergement-list {
         flex-direction: column;
         flex-wrap: wrap;
         height: auto;
     }
-
     #hebergement .marseille .hebergement-list a {
         width: 100%;
     }
-
     #hebergement .marseille .title {
         padding: 0;
     }
-
     #activite {
         margin-top: 50px;
         margin-bottom: 35px;
         padding: 0 20px;
     }
-
     .activite-list .column article {
         height: 180px;
         margin-bottom: 20px;
-
     }
-
     #activite .activite-list .column {
         width: 100%;
-
     }
-
     #activite .activite-list {
         flex-wrap: wrap;
         justify-content: flex-start;
         height: auto;
-
     }
-
     footer {
         flex-direction: column;
         padding-top: 20px;
     }
-
     footer .footer-column {
         width: auto;
         height: 100%;
-        padding: 0px 0px 20px 30px;
+        padding: 0px 0px 10px 30px;
     }
-
+    footer h4 {
+        font-size: 20px;
+    }
     footer li a {
         font-size: 18px;
+    }
+    footer li {
+        line-height: 30px;
     }
 }
